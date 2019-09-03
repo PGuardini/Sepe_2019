@@ -89,16 +89,26 @@
             .desativado{
                 display:none;
             }
+            .bom{
+                color:#036bfc;
+            }
+            .medio{
+                color:#fc8c03;
+            }
+            .ruim{
+                color:#c90202;
+            }
         </style>
     </head>
     <body>
 
         <form id="regForm" action="functions.php" method='POST'>
-            <h1>Register:</h1>
+            <h1>Perfil IFiano</h1>
 
             <!-- PAGINA 1 -->
 
             <div class="tab">
+                <p style='text-align:center;'>1/6</p>
                 <p>
                     <label>
                         <h4>Curso:</h4>
@@ -168,7 +178,8 @@
 
             <!-- PAGINA 2 -->
 
-            <div class="tab">Name:
+            <div class="tab">
+                <p style='text-align:center;'>2/6</p>
                 <p>
                     <label>
                         <h4>Orientação Sexual:</h4>
@@ -282,15 +293,16 @@
 
             <!-- PAGINA 3-->
 
-            <div class="tab">Name:
+            <div class="tab">
+                <p style='text-align:center;'>3/6</p>
                 <p>
                     <label>
-                        <h4>Quanto você consome de serviços de streaming (1-5):</h4>
-                        <h6 style='float:left;width:20%;text-align:center;'>1 (muito pouco)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;'>2 (pouco)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;'>3 (razoavel)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;'>4 (muito)</h6>
-                        <h6 style='float:right;width:20%;text-align:center;'>5 (em excesso)</h6>
+                        <h4>Quanto você consome de serviços de streaming(Netflix,Spotify etc) (1-5):</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (razoavel)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (muito)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (em excesso)</h6>
                     </label>
                     
                     <input type="range" class="custom-range" min="1" max="5" name='streaming'>
@@ -298,11 +310,11 @@
                 <p>
                     <label>
                         <h4>Seu posicionamento político (1-5)</h4>
-                        <h6 style='float:left;width:20%;text-align:center;'>1 (extrema esquerda)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;'>2 (esquerda)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;'>3 (centro)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;'>4 (direita)</h6>
-                        <h6 style='float:right;width:20%;text-align:center;'>5 (extrema direita)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (extrema esquerda)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (esquerda)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (centro)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (direita)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (extrema direita)</h6>
                     </label>
                     
                     <input type="range" class="custom-range" min="1" max="5" name='politica'>
@@ -345,18 +357,18 @@
                         <label class="custom-control-label" for="barraSul">Barra do Sul</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="outra" name="moradia" class="custom-control-input" value='outra'>
-                        <label class="custom-control-label" for="outra">Outra</label>
+                        <input type="radio" id="outraCidade" name="moradia" class="custom-control-input" value='outra'>
+                        <label class="custom-control-label" for="outraCidade">Outra</label>
                     </div>
                 </p>
                 <p>
                     <label>
-                        <h4>Seu estado de espírito</h4>
-                        <h6 style='float:left;width:20%;text-align:center;'>1 (muito mau)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;'>2 (mau)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;'>3 (normal)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;'>4 (bom)</h6>
-                        <h6 style='float:right;width:20%;text-align:center;'>5 (muito bom)</h6>
+                        <h4>Seu estado de espírito:</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito mau)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (mau)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (normal)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (bom)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (muito bom)</h6>
                     </label>
                     
                     <input type="range" class="custom-range" min="1" max="5" name='estadoEspirito'>
@@ -365,32 +377,196 @@
 
             <!-- PAGINA 4-->
 
-            <div class="tab">Name:
-                <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
-                <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
-                <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+            <div class="tab">
+                <p style='text-align:center;'>4/6</p>
+                <p>
+                    <label>
+                        <h4>Sua família tem renda fixa?</h4>
+                    </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="simRenda" name="renda" class="custom-control-input" value='sim'>
+                        <label class="custom-control-label" for="simRenda">Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="naoRenda" name="renda" class="custom-control-input" value='nao'>
+                        <label class="custom-control-label" for="naoRenda">Não</label>
+                    </div>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Você pensa em cursar o ensino superior?</h4>
+                    </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="simSuperior" name="ensinoSuperior" class="custom-control-input" value='sim'>
+                        <label class="custom-control-label" for="simSuperior">Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="talvezSuperior" name="ensinoSuperior" class="custom-control-input" value='talvez'>
+                        <label class="custom-control-label" for="talvezSuperior">Talvez</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="naoSuperior" name="ensinoSuperior" class="custom-control-input" value='nao'>
+                        <label class="custom-control-label" for="naoSuperior">Não</label>
+                    </div>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Quão saudável você se alimenta?</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito mau)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (mau)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (decentemente)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (bem)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (muito bem)</h6>
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='alimentacao'>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Quanto você pratica atividades físicas?</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (nada)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (regularmente)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (frequentemente)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (todo dia)</h6>
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='atividadeFisica'>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Você costuma assistir às aulas cansado?</h4>
+                    </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="simCansaco" name="cansacoAula" class="custom-control-input" value='sim'>
+                        <label class="custom-control-label" for="simCansaco">Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="naoCansaco" name="cansacoAula" class="custom-control-input" value='nao'>
+                        <label class="custom-control-label" for="naoCansaco">Não</label>
+                    </div>
+                </p>
             </div>
             
             <!-- PAGINA 5 -->
 
-            <div class="tab">Name:
-                <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
-                <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
-                <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+            <div class="tab">
+                <p style='text-align:center;'>5/6</p>
+                <p>
+                    <label>
+                        <h4>Você tem irmãos?</h4>
+                    </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="simIrmao" name="irmao" class="custom-control-input" value='sim'>
+                        <label class="custom-control-label" for="simIrmao">Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="naoIrmao" name="irmao" class="custom-control-input" value='nao'>
+                        <label class="custom-control-label" for="naoIrmao">Não</label>
+                    </div>
+                </p>
+                
+                <p>
+                    <label>
+                        <h4>Quanto você consome de produtos culturais (shows, cinema, teatro etc)?</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (nunca)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (raramente)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (uma vez por mês)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (uma vez cada duas semana)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (todo semana)</h6>
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='prodCultural'>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Quanto você se sente pressionado pela rotina no IF?</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (quase nada)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (pressão normal de qualquer escola)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (muito)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (extremamente pressionado)</h6>
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='pressao'>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Como você classificaria seus relacionamentos dentro do IF?</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito ruins)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (ruins)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (normais)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (bons)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (muito bons)</h6>
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='relacionamentosIF'>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Quanto tempo você tem tempo livre para poder estudar?</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (suficiente)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (muito)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (tenho tempo demais)</h6>
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='tempoEstudo'>
+                </p>
             </div>
 
             <!-- PAGINA 6 -->
 
-            <div class="tab">Name:
-                <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
-                <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
-                <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+            <div class="tab">
+                <p style='text-align:center;'>6/6</p>
+                <p>
+                    <label>
+                        <h4>Quanto tempo você tem para lazer e atividades particulares?</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (suficiente)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (muito)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (tenho tempo de sobra)</h6>
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='tempoParticular'>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Você já usou ou usa entorpecentes (drogas) lícitos / ilícitos?</h4>
+                    </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="simDrogas" name="drogas" class="custom-control-input" value='sim'>
+                        <label class="custom-control-label" for="simDrogas">Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="naoDrogas" name="drogas" class="custom-control-input" value='nao'>
+                        <label class="custom-control-label" for="naoDrogas">Não</label>
+                    </div>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Você já pensou em suicídio?</h4>
+                    </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="simSuicidio" name="suicidio" class="custom-control-input" value='sim'>
+                        <label class="custom-control-label" for="simSuicidio">Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="naoSuicidio" name="suicidio" class="custom-control-input" value='nao'>
+                        <label class="custom-control-label" for="naoSuicidio">Não</label>
+                    </div>
+                </p>
             </div>
 
             <!-- BARRA INFERIOR DE NAVEGAÇÂO -->
@@ -421,7 +597,7 @@
                     }else{
                         $("#quimi").addClass("desativado");
                    }
-                })
+                });
             })
         </script>
         
@@ -470,6 +646,7 @@
                 }
                 // Otherwise, display the correct tab:
                 showTab(currentTab);
+                window.scrollTo(0, 10);
             }
 
             function validateForm() {
