@@ -106,9 +106,10 @@
             <h1>Perfil IFiano</h1>
 
             <!-- PAGINA 1 -->
-
+            
             <div class="tab">
                 <p style='text-align:center;'>1/6</p>
+                <h5 style="background:#d62320; color:white; text-align:center; padding:2px;">Favor preencher todos campos para poder enviar o formulário</h5>
                 <p>
                     <label>
                         <h4>Curso:</h4>
@@ -145,7 +146,7 @@
                     <label>
                         <h4>Cor:</h4>
                     </label>
-                    <select class="form-control" name='cor' id='cor'>
+                    <select class="form-control" name='cor' id='cor' required>
                         <option value='branco'>Branco</option>
                         <option value='pardo'>Pardo</option>
                         <option value='negro'>Negro</option>
@@ -159,18 +160,18 @@
                     <label>
                         <h4>Idade:</h4>
                     </label>
-                    <input name="idade" class='form-control' type='number' min='14' max='21'>
+                    <input name="idade" class='form-control' type='number' min='14' max='21' required>
                 </p>
                 <p>
                     <label>
                         <h4>Sexo (biológico):</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="masculino" name="sexo" class="custom-control-input" value='masculino'>
+                        <input type="radio" id="masculino" name="sexo" class="custom-control-input" value='masculino' required>
                         <label class="custom-control-label" for="masculino">Masculino</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="feminino" name="sexo" class="custom-control-input" value='feminino'>
+                        <input type="radio" id="feminino" name="sexo" class="custom-control-input" value='feminino' required>
                         <label class="custom-control-label" for="feminino">Feminino</label>
                     </div>
                 </p>
@@ -185,27 +186,27 @@
                         <h4>Orientação Sexual:</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="heterossexual" name="orientacao" class="custom-control-input" value='heterossexual'>
+                        <input type="radio" id="heterossexual" name="orientacao" class="custom-control-input" value='heterossexual' required>
                         <label class="custom-control-label" for="heterossexual">Heterossexual</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="homossexual" name="orientacao" class="custom-control-input" value='homossexual'>
+                        <input type="radio" id="homossexual" name="orientacao" class="custom-control-input" value='homossexual' required>
                         <label class="custom-control-label" for="homossexual">Homossexual</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="bissexual" name="orientacao" class="custom-control-input" value='bissexual'>
+                        <input type="radio" id="bissexual" name="orientacao" class="custom-control-input" value='bissexual' required>
                         <label class="custom-control-label" for="bissexual">Bissexual</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="pansexual" name="orientacao" class="custom-control-input" value='pansexual'>
+                        <input type="radio" id="pansexual" name="orientacao" class="custom-control-input" value='pansexual' required>
                         <label class="custom-control-label" for="pansexual">Pansexual</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="assexual" name="orientacao" class="custom-control-input" value='assexual'>
+                        <input type="radio" id="assexual" name="orientacao" class="custom-control-input" value='assexual' required>
                         <label class="custom-control-label" for="assexual">Assexual</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="queer" name="orientacao" class="custom-control-input" value='queer'>
+                        <input type="radio" id="queer" name="orientacao" class="custom-control-input" value='queer' required>
                         <label class="custom-control-label" for="queer">Queer</label>
                     </div>
                 </p>
@@ -214,15 +215,15 @@
                         <h4>Educação Fundamental (tipo de educação que teve):</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="publica" name="fundamental" class="custom-control-input" value='publica'>
+                        <input type="radio" id="publica" name="fundamental" class="custom-control-input" value='publica' required>
                         <label class="custom-control-label" for="publica">Pública</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="privada" name="fundamental" class="custom-control-input" value='privada'>
+                        <input type="radio" id="privada" name="fundamental" class="custom-control-input" value='privada' required>
                         <label class="custom-control-label" for="privada">Privada</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="mista" name="fundamental" class="custom-control-input" value='mista'>
+                        <input type="radio" id="mista" name="fundamental" class="custom-control-input" value='mista' required>
                         <label class="custom-control-label" for="mista">Mista</label>
                     </div>
                 </p>
@@ -231,31 +232,31 @@
                         <h4>Religião:</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="crista" name="religiao" class="custom-control-input" value='crista'>
+                        <input type="radio" id="crista" name="religiao" class="custom-control-input" value='crista' required>
                         <label class="custom-control-label" for="crista">Cristã</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="espirita" name="religiao" class="custom-control-input" value='espirita'>
+                        <input type="radio" id="espirita" name="religiao" class="custom-control-input" value='espirita' required>
                         <label class="custom-control-label" for="espirita">Espírita</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="judaica" name="religiao" class="custom-control-input" value='judaica'>
+                        <input type="radio" id="judaica" name="religiao" class="custom-control-input" value='judaica' required>
                         <label class="custom-control-label" for="judaica">Judaica</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="islamica" name="religiao" class="custom-control-input" value='islamica'>
+                        <input type="radio" id="islamica" name="religiao" class="custom-control-input" value='islamica' required>
                         <label class="custom-control-label" for="islamica">Islâmica</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="africana" name="religiao" class="custom-control-input" value='africana'>
+                        <input type="radio" id="africana" name="religiao" class="custom-control-input" value='africana' required>
                         <label class="custom-control-label" for="africana">Africana</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="sem" name="religiao" class="custom-control-input" value='sem'>
+                        <input type="radio" id="sem" name="religiao" class="custom-control-input" value='sem' required>
                         <label class="custom-control-label" for="sem">Não possui</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="outra" name="religiao" class="custom-control-input" value='outra'>
+                        <input type="radio" id="outra" name="religiao" class="custom-control-input" value='outra' required>
                         <label class="custom-control-label" for="outra">Outra</label>
                     </div>
                 </p>
@@ -264,11 +265,11 @@
                         <h4>Exerce atividade remunerada?</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="sim" name="trabalho" class="custom-control-input" value='sim'>
+                        <input type="radio" id="sim" name="trabalho" class="custom-control-input" value='sim' required>
                         <label class="custom-control-label" for="sim">Sim</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="nao" name="trabalho" class="custom-control-input" value='nao'>
+                        <input type="radio" id="nao" name="trabalho" class="custom-control-input" value='nao' required>
                         <label class="custom-control-label" for="nao">Não</label>
                     </div>
                 </p>
@@ -277,15 +278,15 @@
                         <h4>Por que escolheu o IF?</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="vestibular" name="escolhaIF" class="custom-control-input" value='vestibular'>
+                        <input type="radio" id="vestibular" name="escolhaIF" class="custom-control-input" value='vestibular' required>
                         <label class="custom-control-label" for="vestibular">Preparação para o vestibular</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="qualidade" name="escolhaIF" class="custom-control-input" value='qualidade'>
+                        <input type="radio" id="qualidade" name="escolhaIF" class="custom-control-input" value='qualidade' required>
                         <label class="custom-control-label" for="qualidade">Qualidade de ensino</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="trabalho" name="escolhaIF" class="custom-control-input" value='trabalho'>
+                        <input type="radio" id="trabalho" name="escolhaIF" class="custom-control-input" value='trabalho' required>
                         <label class="custom-control-label" for="trabalho">Para ingressar no mercado de trabalho</label>
                     </div>
                 </p>
@@ -305,7 +306,7 @@
                         <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (em excesso)</h6>
                     </label>
                     
-                    <input type="range" class="custom-range" min="1" max="5" name='streaming'>
+                    <input type="range" class="custom-range" min="1" max="5" name='streaming' required>
                 </p>
                 <p>
                     <label>
@@ -317,22 +318,22 @@
                         <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (extrema direita)</h6>
                     </label>
                     
-                    <input type="range" class="custom-range" min="1" max="5" name='politica'>
+                    <input type="range" class="custom-range" min="1" max="5" name='politica' required>
                 </p>
                 <p>
                     <label>
                         <h4>Seus pais são divorciados? Se sim, mora com quem?</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="mae" name="divorcio" class="custom-control-input" value='mae'>
+                        <input type="radio" id="mae" name="divorcio" class="custom-control-input" value='mae' required>
                         <label class="custom-control-label" for="mae">Com minha mãe</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="pai" name="divorcio" class="custom-control-input" value='pai'>
+                        <input type="radio" id="pai" name="divorcio" class="custom-control-input" value='pai' required>
                         <label class="custom-control-label" for="pai">Com meu Pai</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="casados" name="divorcio" class="custom-control-input" value='casados'>
+                        <input type="radio" id="casados" name="divorcio" class="custom-control-input" value='casados' required>
                         <label class="custom-control-label" for="casados">São casados</label>
                     </div>
                 </p>
@@ -341,23 +342,23 @@
                         <h4>Qual cidade você mora?</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="joinville" name="moradia" class="custom-control-input" value='joinville'>
+                        <input type="radio" id="joinville" name="moradia" class="custom-control-input" value='joinville' required>
                         <label class="custom-control-label" for="joinville">Joinville</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="araquari" name="moradia" class="custom-control-input" value='araquari'>
+                        <input type="radio" id="araquari" name="moradia" class="custom-control-input" value='araquari' required>
                         <label class="custom-control-label" for="araquari">Araquari</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="sfs" name="moradia" class="custom-control-input" value='sfs'>
+                        <input type="radio" id="sfs" name="moradia" class="custom-control-input" value='sfs' required>
                         <label class="custom-control-label" for="sfs">São Francisco do Sul</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="barraSul" name="moradia" class="custom-control-input" value='barraSul'>
+                        <input type="radio" id="barraSul" name="moradia" class="custom-control-input" value='barraSul' required>
                         <label class="custom-control-label" for="barraSul">Barra do Sul</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="outraCidade" name="moradia" class="custom-control-input" value='outra'>
+                        <input type="radio" id="outraCidade" name="moradia" class="custom-control-input" value='outra' required>
                         <label class="custom-control-label" for="outraCidade">Outra</label>
                     </div>
                 </p>
@@ -371,7 +372,7 @@
                         <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (muito bom)</h6>
                     </label>
                     
-                    <input type="range" class="custom-range" min="1" max="5" name='estadoEspirito'>
+                    <input type="range" class="custom-range" min="1" max="5" name='estadoEspirito' required>
                 </p>
             </div>
 
@@ -384,11 +385,11 @@
                         <h4>Sua família tem renda fixa?</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="simRenda" name="renda" class="custom-control-input" value='sim'>
+                        <input type="radio" id="simRenda" name="renda" class="custom-control-input" value='sim' required>
                         <label class="custom-control-label" for="simRenda">Sim</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="naoRenda" name="renda" class="custom-control-input" value='nao'>
+                        <input type="radio" id="naoRenda" name="renda" class="custom-control-input" value='nao' required>
                         <label class="custom-control-label" for="naoRenda">Não</label>
                     </div>
                 </p>
@@ -398,15 +399,15 @@
                         <h4>Você pensa em cursar o ensino superior?</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="simSuperior" name="ensinoSuperior" class="custom-control-input" value='sim'>
+                        <input type="radio" id="simSuperior" name="ensinoSuperior" class="custom-control-input" value='sim' required>
                         <label class="custom-control-label" for="simSuperior">Sim</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="talvezSuperior" name="ensinoSuperior" class="custom-control-input" value='talvez'>
+                        <input type="radio" id="talvezSuperior" name="ensinoSuperior" class="custom-control-input" value='talvez' required>
                         <label class="custom-control-label" for="talvezSuperior">Talvez</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="naoSuperior" name="ensinoSuperior" class="custom-control-input" value='nao'>
+                        <input type="radio" id="naoSuperior" name="ensinoSuperior" class="custom-control-input" value='nao' required>
                         <label class="custom-control-label" for="naoSuperior">Não</label>
                     </div>
                 </p>
@@ -421,7 +422,7 @@
                         <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (muito bem)</h6>
                     </label>
                     
-                    <input type="range" class="custom-range" min="1" max="5" name='alimentacao'>
+                    <input type="range" class="custom-range" min="1" max="5" name='alimentacao' required>
                 </p>
 
                 <p>
@@ -434,7 +435,7 @@
                         <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (todo dia)</h6>
                     </label>
                     
-                    <input type="range" class="custom-range" min="1" max="5" name='atividadeFisica'>
+                    <input type="range" class="custom-range" min="1" max="5" name='atividadeFisica' required>
                 </p>
 
                 <p>
@@ -442,11 +443,11 @@
                         <h4>Você costuma assistir às aulas cansado?</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="simCansaco" name="cansacoAula" class="custom-control-input" value='sim'>
+                        <input type="radio" id="simCansaco" name="cansacoAula" class="custom-control-input" value='sim' required>
                         <label class="custom-control-label" for="simCansaco">Sim</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="naoCansaco" name="cansacoAula" class="custom-control-input" value='nao'>
+                        <input type="radio" id="naoCansaco" name="cansacoAula" class="custom-control-input" value='nao' required>
                         <label class="custom-control-label" for="naoCansaco">Não</label>
                     </div>
                 </p>
@@ -461,11 +462,11 @@
                         <h4>Você tem irmãos?</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="simIrmao" name="irmao" class="custom-control-input" value='sim'>
+                        <input type="radio" id="simIrmao" name="irmao" class="custom-control-input" value='sim' required>
                         <label class="custom-control-label" for="simIrmao">Sim</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="naoIrmao" name="irmao" class="custom-control-input" value='nao'>
+                        <input type="radio" id="naoIrmao" name="irmao" class="custom-control-input" value='nao' required>
                         <label class="custom-control-label" for="naoIrmao">Não</label>
                     </div>
                 </p>
@@ -480,7 +481,7 @@
                         <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (todo semana)</h6>
                     </label>
                     
-                    <input type="range" class="custom-range" min="1" max="5" name='prodCultural'>
+                    <input type="range" class="custom-range" min="1" max="5" name='prodCultural' required>
                 </p>
 
                 <p>
@@ -493,7 +494,7 @@
                         <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (extremamente pressionado)</h6>
                     </label>
                     
-                    <input type="range" class="custom-range" min="1" max="5" name='pressao'>
+                    <input type="range" class="custom-range" min="1" max="5" name='pressao' required>
                 </p>
 
                 <p>
@@ -506,7 +507,7 @@
                         <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (muito bons)</h6>
                     </label>
                     
-                    <input type="range" class="custom-range" min="1" max="5" name='relacionamentosIF'>
+                    <input type="range" class="custom-range" min="1" max="5" name='relacionamentosIF' required>
                 </p>
 
                 <p>
@@ -519,7 +520,7 @@
                         <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (tenho tempo demais)</h6>
                     </label>
                     
-                    <input type="range" class="custom-range" min="1" max="5" name='tempoEstudo'>
+                    <input type="range" class="custom-range" min="1" max="5" name='tempoEstudo' required>
                 </p>
             </div>
 
@@ -537,7 +538,7 @@
                         <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (tenho tempo de sobra)</h6>
                     </label>
                     
-                    <input type="range" class="custom-range" min="1" max="5" name='tempoParticular'>
+                    <input type="range" class="custom-range" min="1" max="5" name='tempoParticular' required>
                 </p>
 
                 <p>
@@ -545,11 +546,11 @@
                         <h4>Você já usou ou usa entorpecentes (drogas) lícitos / ilícitos?</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="simDrogas" name="drogas" class="custom-control-input" value='sim'>
+                        <input type="radio" id="simDrogas" name="drogas" class="custom-control-input" value='sim' required>
                         <label class="custom-control-label" for="simDrogas">Sim</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="naoDrogas" name="drogas" class="custom-control-input" value='nao'>
+                        <input type="radio" id="naoDrogas" name="drogas" class="custom-control-input" value='nao' required>
                         <label class="custom-control-label" for="naoDrogas">Não</label>
                     </div>
                 </p>
@@ -559,11 +560,11 @@
                         <h4>Você já pensou em suicídio?</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="simSuicidio" name="suicidio" class="custom-control-input" value='sim'>
+                        <input type="radio" id="simSuicidio" name="suicidio" class="custom-control-input" value='sim' required>
                         <label class="custom-control-label" for="simSuicidio">Sim</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="naoSuicidio" name="suicidio" class="custom-control-input" value='nao'>
+                        <input type="radio" id="naoSuicidio" name="suicidio" class="custom-control-input" value='nao' required>
                         <label class="custom-control-label" for="naoSuicidio">Não</label>
                     </div>
                 </p>
