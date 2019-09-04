@@ -111,6 +111,9 @@
                 <p style='text-align:center;'>1/6</p>
                 <h5 style="background:#d62320; color:white; text-align:center; padding:2px;">Favor preencher todos campos para poder enviar o formulário</h5>
                 <p>
+                <p style='text-align:center;'></p>
+                <h5 style="background:#d62320; color:white; text-align:center; padding:2px;">Fique tranquilo, todas as suas informações ficarão em sigilo e todos os dados servirão apenas para esta pesquisa</h5>
+                <p>
                     <label>
                         <h4>Curso:</h4>
                     </label>
@@ -210,23 +213,7 @@
                         <label class="custom-control-label" for="queer">Queer</label>
                     </div>
                 </p>
-                <p>
-                    <label>
-                        <h4>Educação Fundamental (tipo de educação que teve):</h4>
-                    </label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="publica" name="fundamental" class="custom-control-input" value='publica' required>
-                        <label class="custom-control-label" for="publica">Pública</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="privada" name="fundamental" class="custom-control-input" value='privada' required>
-                        <label class="custom-control-label" for="privada">Privada</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="mista" name="fundamental" class="custom-control-input" value='mista' required>
-                        <label class="custom-control-label" for="mista">Mista</label>
-                    </div>
-                </p>
+
                 <p>
                     <label>
                         <h4>Religião:</h4>
@@ -260,83 +247,7 @@
                         <label class="custom-control-label" for="outra">Outra</label>
                     </div>
                 </p>
-                <p>
-                    <label>
-                        <h4>Exerce atividade remunerada?</h4>
-                    </label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="sim" name="trabalho" class="custom-control-input" value='sim' required>
-                        <label class="custom-control-label" for="sim">Sim</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="nao" name="trabalho" class="custom-control-input" value='nao' required>
-                        <label class="custom-control-label" for="nao">Não</label>
-                    </div>
-                </p>
-                <p>
-                    <label>
-                        <h4>Por que escolheu o IF?</h4>
-                    </label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="vestibular" name="escolhaIF" class="custom-control-input" value='vestibular' required>
-                        <label class="custom-control-label" for="vestibular">Preparação para o vestibular</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="qualidade" name="escolhaIF" class="custom-control-input" value='qualidade' required>
-                        <label class="custom-control-label" for="qualidade">Qualidade de ensino</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="trabalho" name="escolhaIF" class="custom-control-input" value='trabalho' required>
-                        <label class="custom-control-label" for="trabalho">Para ingressar no mercado de trabalho</label>
-                    </div>
-                </p>
-            </div>
 
-            <!-- PAGINA 3-->
-
-            <div class="tab">
-                <p style='text-align:center;'>3/6</p>
-                <p>
-                    <label>
-                        <h4>Quanto você consome de serviços de streaming(Netflix,Spotify etc) (1-5):</h4>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito pouco)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (pouco)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (razoavel)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (muito)</h6>
-                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (em excesso)</h6>
-                    </label>
-                    
-                    <input type="range" class="custom-range" min="1" max="5" name='streaming' required>
-                </p>
-                <p>
-                    <label>
-                        <h4>Seu posicionamento político (1-5)</h4>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (extrema esquerda)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (esquerda)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (centro)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (direita)</h6>
-                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (extrema direita)</h6>
-                    </label>
-                    
-                    <input type="range" class="custom-range" min="1" max="5" name='politica' required>
-                </p>
-                <p>
-                    <label>
-                        <h4>Seus pais são divorciados? Se sim, mora com quem?</h4>
-                    </label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="mae" name="divorcio" class="custom-control-input" value='mae' required>
-                        <label class="custom-control-label" for="mae">Com minha mãe</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="pai" name="divorcio" class="custom-control-input" value='pai' required>
-                        <label class="custom-control-label" for="pai">Com meu Pai</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="casados" name="divorcio" class="custom-control-input" value='casados' required>
-                        <label class="custom-control-label" for="casados">São casados</label>
-                    </div>
-                </p>
                 <p>
                     <label>
                         <h4>Qual cidade você mora?</h4>
@@ -362,18 +273,145 @@
                         <label class="custom-control-label" for="outraCidade">Outra</label>
                     </div>
                 </p>
+
                 <p>
                     <label>
-                        <h4>Seu estado de espírito:</h4>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito mau)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (mau)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (normal)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (bom)</h6>
-                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (muito bom)</h6>
+                        <h4>Exerce atividade remunerada?</h4>
+                    </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="sim" name="trabalho" class="custom-control-input" value='sim' required>
+                        <label class="custom-control-label" for="sim">Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="nao" name="trabalho" class="custom-control-input" value='nao' required>
+                        <label class="custom-control-label" for="nao">Não</label>
+                    </div>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Educação Fundamental (tipo de educação que teve):</h4>
+                    </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="publica" name="fundamental" class="custom-control-input" value='publica' required>
+                        <label class="custom-control-label" for="publica">Pública</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="privada" name="fundamental" class="custom-control-input" value='privada' required>
+                        <label class="custom-control-label" for="privada">Privada</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="mista" name="fundamental" class="custom-control-input" value='mista' required>
+                        <label class="custom-control-label" for="mista">Mista</label>
+                    </div>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Por que escolheu o IF?</h4>
+                    </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="vestibular" name="escolhaIF" class="custom-control-input" value='vestibular' required>
+                        <label class="custom-control-label" for="vestibular">Preparação para o vestibular</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="qualidade" name="escolhaIF" class="custom-control-input" value='qualidade' required>
+                        <label class="custom-control-label" for="qualidade">Qualidade de ensino</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="trabalho" name="escolhaIF" class="custom-control-input" value='trabalho' required>
+                        <label class="custom-control-label" for="trabalho">Para ingressar no mercado de trabalho</label>
+                    </div>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Você pensa em cursar o ensino superior?</h4>
+                    </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="simSuperior" name="ensinoSuperior" class="custom-control-input" value='sim' required>
+                        <label class="custom-control-label" for="simSuperior">Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="talvezSuperior" name="ensinoSuperior" class="custom-control-input" value='talvez' required>
+                        <label class="custom-control-label" for="talvezSuperior">Talvez</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="naoSuperior" name="ensinoSuperior" class="custom-control-input" value='nao' required>
+                        <label class="custom-control-label" for="naoSuperior">Não</label>
+                    </div>
+                </p>
+            </div>
+
+            <!-- PAGINA 3-->
+
+            <div class="tab">
+                <p style='text-align:center;'>3/6</p>
+                <p>
+                    <label>
+                        <h4>Quanto você consome de serviços de streaming(Netflix,Spotify etc) (1-5):</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (razoavel)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (muito)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (em excesso)</h6>
                     </label>
                     
-                    <input type="range" class="custom-range" min="1" max="5" name='estadoEspirito' required>
+                    <input type="range" class="custom-range" min="1" max="5" name='streaming' required>
                 </p>
+                <p>
+                    <label>
+                        <h4>Seu posicionamento político (1-5)</h4>
+                        
+                        <h6 style='float:left;width:34%;text-align:center;' class="ruim">2 (esquerda)</h6>
+                        <h6 style='float:left;width:33%;text-align:center;' class="medio">3 (centro)</h6>
+                        <h6 style='float:left;width:33%;text-align:center;' class="bom">4 (direita)</h6>
+                        
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="3" name='politica' required>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Quão saudável você se alimenta?</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito mal)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (mal)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (decentemente)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (bem)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (muito bem)</h6>
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='alimentacao' required>
+                </p>
+
+                <p>
+                    <label>
+                        <h4>Quanto você pratica de atividades físicas?</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (nada)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (regularmente)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (frequentemente)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (todo dia)</h6>
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='atividadeFisica' required>
+                </p>
+                
+                <p>
+                    <label>
+                        <h4>Você já usou ou usa entorpecentes (drogas) lícitos / ilícitos?</h4>
+                    </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="simDrogas" name="drogas" class="custom-control-input" value='sim' required>
+                        <label class="custom-control-label" for="simDrogas">Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="naoDrogas" name="drogas" class="custom-control-input" value='nao' required>
+                        <label class="custom-control-label" for="naoDrogas">Não</label>
+                    </div>
+                </p>
+
             </div>
 
             <!-- PAGINA 4-->
@@ -396,67 +434,22 @@
 
                 <p>
                     <label>
-                        <h4>Você pensa em cursar o ensino superior?</h4>
+                        <h4>Seus pais são divorciados? Se sim, mora com quem?</h4>
                     </label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="simSuperior" name="ensinoSuperior" class="custom-control-input" value='sim' required>
-                        <label class="custom-control-label" for="simSuperior">Sim</label>
+                        <input type="radio" id="mae" name="divorcio" class="custom-control-input" value='mae' required>
+                        <label class="custom-control-label" for="mae">Com minha mãe</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="talvezSuperior" name="ensinoSuperior" class="custom-control-input" value='talvez' required>
-                        <label class="custom-control-label" for="talvezSuperior">Talvez</label>
+                        <input type="radio" id="pai" name="divorcio" class="custom-control-input" value='pai' required>
+                        <label class="custom-control-label" for="pai">Com meu Pai</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="naoSuperior" name="ensinoSuperior" class="custom-control-input" value='nao' required>
-                        <label class="custom-control-label" for="naoSuperior">Não</label>
+                        <input type="radio" id="casados" name="divorcio" class="custom-control-input" value='casados' required>
+                        <label class="custom-control-label" for="casados">São casados / moro com os dois</label>
                     </div>
                 </p>
 
-                <p>
-                    <label>
-                        <h4>Quão saudável você se alimenta?</h4>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito mau)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (mau)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (decentemente)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (bem)</h6>
-                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (muito bem)</h6>
-                    </label>
-                    
-                    <input type="range" class="custom-range" min="1" max="5" name='alimentacao' required>
-                </p>
-
-                <p>
-                    <label>
-                        <h4>Quanto você pratica atividades físicas?</h4>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (nada)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (pouco)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (regularmente)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (frequentemente)</h6>
-                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (todo dia)</h6>
-                    </label>
-                    
-                    <input type="range" class="custom-range" min="1" max="5" name='atividadeFisica' required>
-                </p>
-
-                <p>
-                    <label>
-                        <h4>Você costuma assistir às aulas cansado?</h4>
-                    </label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="simCansaco" name="cansacoAula" class="custom-control-input" value='sim' required>
-                        <label class="custom-control-label" for="simCansaco">Sim</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="naoCansaco" name="cansacoAula" class="custom-control-input" value='nao' required>
-                        <label class="custom-control-label" for="naoCansaco">Não</label>
-                    </div>
-                </p>
-            </div>
-            
-            <!-- PAGINA 5 -->
-
-            <div class="tab">
-                <p style='text-align:center;'>5/6</p>
                 <p>
                     <label>
                         <h4>Você tem irmãos?</h4>
@@ -470,18 +463,26 @@
                         <label class="custom-control-label" for="naoIrmao">Não</label>
                     </div>
                 </p>
+
+            </div>
+            
+            <!-- PAGINA 5 -->
+
+            <div class="tab">
+                <p style='text-align:center;'>5/6</p>
                 
                 <p>
                     <label>
-                        <h4>Quanto você consome de produtos culturais (shows, cinema, teatro etc)?</h4>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (nunca)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (raramente)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (uma vez por mês)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (uma vez cada duas semana)</h6>
-                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (todo semana)</h6>
+                        <h4>Você costuma assistir às aulas cansado?</h4>
                     </label>
-                    
-                    <input type="range" class="custom-range" min="1" max="5" name='prodCultural' required>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="simCansaco" name="cansacoAula" class="custom-control-input" value='sim' required>
+                        <label class="custom-control-label" for="simCansaco">Sim</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="naoCansaco" name="cansacoAula" class="custom-control-input" value='nao' required>
+                        <label class="custom-control-label" for="naoCansaco">Não</label>
+                    </div>
                 </p>
 
                 <p>
@@ -499,6 +500,19 @@
 
                 <p>
                     <label>
+                        <h4>Quanto tempo você tem tempo livre para poder estudar?</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (pouco)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (suficiente)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (muito)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (tenho tempo demais)</h6>
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='tempoEstudo' required>
+                </p>
+
+                <p>
+                    <label>
                         <h4>Como você classificaria seus relacionamentos dentro do IF?</h4>
                         <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito ruins)</h6>
                         <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (ruins)</h6>
@@ -510,24 +524,27 @@
                     <input type="range" class="custom-range" min="1" max="5" name='relacionamentosIF' required>
                 </p>
 
-                <p>
-                    <label>
-                        <h4>Quanto tempo você tem tempo livre para poder estudar?</h4>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito pouco)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (pouco)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (suficiente)</h6>
-                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (muito)</h6>
-                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (tenho tempo demais)</h6>
-                    </label>
-                    
-                    <input type="range" class="custom-range" min="1" max="5" name='tempoEstudo' required>
-                </p>
+                
             </div>
 
             <!-- PAGINA 6 -->
 
             <div class="tab">
                 <p style='text-align:center;'>6/6</p>
+                
+                <p>
+                    <label>
+                        <h4>Seu estado de espírito ultimamente:</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (muito mau)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (mau)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (normal)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (bom)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (muito bom)</h6>
+                    </label>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='estadoEspirito' required>
+                </p>
+
                 <p>
                     <label>
                         <h4>Quanto tempo você tem para lazer e atividades particulares?</h4>
@@ -543,17 +560,18 @@
 
                 <p>
                     <label>
-                        <h4>Você já usou ou usa entorpecentes (drogas) lícitos / ilícitos?</h4>
+                        <h4>Quanto você consome de produtos culturais (shows, cinema, teatro etc)?</h4>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">1 (nunca)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="ruim">2 (raramente)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="medio">3 (uma vez por mês)</h6>
+                        <h6 style='float:left;width:20%;text-align:center;' class="bom">4 (uma vez cada duas semana)</h6>
+                        <h6 style='float:right;width:20%;text-align:center;' class="bom">5 (todo semana)</h6>
                     </label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="simDrogas" name="drogas" class="custom-control-input" value='sim' required>
-                        <label class="custom-control-label" for="simDrogas">Sim</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="naoDrogas" name="drogas" class="custom-control-input" value='nao' required>
-                        <label class="custom-control-label" for="naoDrogas">Não</label>
-                    </div>
+                    
+                    <input type="range" class="custom-range" min="1" max="5" name='prodCultural' required>
                 </p>
+
+                
 
                 <p>
                     <label>
@@ -586,6 +604,8 @@
                 <span class="step"></span>
                 <span class="step"></span>
                 <span class="step"></span>
+                <span class="step"></span>
+
             </div>
         </form>
         

@@ -1,1 +1,32 @@
-[]
+[
+    {
+        "curso": "info",
+        "ano": "3",
+        "cor": "branco",
+        "idade": "17",
+        "sexo": "masculino",
+        "orientacao": "heterossexual",
+        "religiao": "crista",
+        "moradia": "joinville",
+        "trabalho": "nao",
+        "fundamental": "mista",
+        "escolhaIF": "qualidade",
+        "ensinoSuperior": "sim",
+        "streaming": "2",
+        "politica": "1",
+        "alimentacao": "2",
+        "atividadeFisica": "2",
+        "drogas": "sim",
+        "renda": "nao",
+        "divorcio": "casados",
+        "irmao": "sim",
+        "cansacoAula": "sim",
+        "pressao": "4",
+        "tempoEstudo": "2",
+        "relacionamentosIF": "5",
+        "estadoEspirito": "5",
+        "tempoParticular": "3",
+        "prodCultural": "2",
+        "suicidio": "sim"
+    }
+]
